@@ -54,3 +54,33 @@ export const socialsItems = [
     icon: <FaCodepen />,
   },
 ];
+
+export const projectsItems = [
+  {
+    id: "personal-website",
+    title: "Personal Website",
+    description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam doloremque.",
+    image: "",
+    docuLink: "/",
+    websiteLink: "/",
+    categories: ["frontend"],
+  },
+  {
+    id: "personal-website1",
+    title: "Personal Website",
+    description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam doloremque.",
+    image: "",
+    docuLink: "/",
+    websiteLink: "/",
+    categories: ["frontend"],
+  },
+  {
+    id: "personal-website2",
+    title: "Personal Website",
+    description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam doloremque.",
+    image: "",
+    docuLink: "/",
+    websiteLink: "/",
+    categories: ["frontend"],
+  },
+];

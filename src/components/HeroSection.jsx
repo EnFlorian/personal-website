@@ -21,6 +21,7 @@ const HeroSection = () => {
       <h1 className="hero__title">Florian Engertsberger</h1>
       <Typewriter content={typewriterContent} />
       <ul className="hero__socials">{socialsLinks}</ul>
+      <p className="hero__name">Florian Engertsberger</p>
     </section>
   );
 };
