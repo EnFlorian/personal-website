@@ -1,0 +1,126 @@
+.about {
+  padding: 4rem 0;
+  color: var(--clr-text-primary);
+  display: flex;
+  flex-direction: column;
+
+  &__subheading {
+    font-size: 1.1rem;
+    color: var(--clr-text-secondary);
+  }
+
+  &__heading {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--clr-text-primary);
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+
+    &::after {
+      position: absolute;
+      top: 0.3rem;
+      left: 14rem;
+      content: "";
+      display: block;
+      width: 6rem;
+      height: 0.1rem;
+      background-color: var(--clr-accent);
+      margin: 1rem auto;
+    }
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__left-content {
+    flex: 1;
+    margin-right: 4rem;
+  }
+
+  &__image {
+    padding: 0.3rem;
+    margin: 0px;
+    border-radius: 0.2rem;
+  }
+
+  &__image-border {
+    border: 1px solid var(--clr-accent);
+    border-radius: 0.2rem;
+  }
+
+  &__right-content {
+    flex: 2;
+  }
+  &__subtitle {
+    color: var(--clr-accent);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-size: 1rem;
+    color: var(--clr-text-secondary);
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--clr-text-secondary);
+  }
+
+  &__personals {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+  &__personals-left {
+    flex: 1;
+  }
+
+  &__personals-right {
+    flex: 1;
+  }
+
+  &__personals-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  &__personals-item-title {
+    font-size: 1rem;
+    color: var(--clr-text-primary);
+    margin-right: 1rem;
+  }
+
+  &__personals-item-description {
+    font-size: 1rem;
+    color: var(--clr-text-secondary);
+  }
+
+  &__btn {
+    background-color: var(--clr-accent);
+    text-decoration: none;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--clr-primary);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: var(--clr-accent);
+      color: var(--clr-text-primary);
+    }
+  }
+
+  &__accent {
+    color: var(--clr-accent);
+  }
+}
