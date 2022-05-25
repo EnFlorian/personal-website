@@ -1,0 +1,74 @@
+@import-normalize; /* normalizes resets */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --font-primary: "Poppins", sans-serif;
+  --clr-text-primary: #ffffff;
+  --clr-text-secondary: #000000;
+  --clr-text-tertiary: #3b3b3b;
+  --clr-bg: #f5f6fe;
+  --clr-section-bg-dark: #191919;
+  --clr-section-bg-light: white;
+  --clr-accent: #ff9422;
+}
+
+/* darkmode theme */
+html[data-theme="dark"] {
+}
+
+*,
+::before,
+::after {
+  font-family: var(--font-primary);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Scrollbar */
+/* Width */
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 40%, 0.5);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--clr-section-bg-dark);
+  /* border-radius: 1rem; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:   var(--clr-accent);
+  border-radius: 1rem;
+}
+
+/* Accesability */
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior:auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
