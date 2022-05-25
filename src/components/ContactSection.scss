@@ -1,0 +1,142 @@
+.contact {
+  padding: 4rem 0;
+  color: var(--clr-text-primary);
+  display: flex;
+  flex-direction: column;
+
+  &__subheading {
+    font-size: 1.1rem;
+    color: var(--clr-text-secondary);
+  }
+
+  &__heading {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--clr-text-primary);
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+
+    &::after {
+      position: absolute;
+      top: 0.3rem;
+      left: 18rem;
+      content: "";
+      display: block;
+      width: 6rem;
+      height: 0.1rem;
+      background-color: var(--clr-accent);
+      margin: 1rem auto;
+    }
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__left-content {
+    flex: 1;
+    margin-right: 4rem;
+  }
+
+  &__right-content {
+    flex: 1;
+  }
+
+  &__title {
+    color: var(--clr-text-primary);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    color: var(--clr-text-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  &__form {
+    outline: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    background-color: var(--clr-bg-light);
+    border: none;
+    margin-bottom: 1rem;
+    color: var(--clr-text-secondary);
+    padding: 0 0.5rem;
+    height: 2.5rem;
+
+    &:focus {
+      border-bottom: 1px solid var(--clr-accent);
+      outline: none;
+    }
+  }
+
+  &__textarea {
+    background-color: var(--clr-bg-light);
+    color: var(--clr-text-secondary);
+    padding: 0.5rem 0.5rem;
+
+    border: none;
+    height: 8rem;
+    resize: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__btn {
+    margin-top: 1rem;
+    height: 2.5rem;
+    width: 10rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--clr-accent);
+    color: var(--clr-text-primary);
+  }
+
+  &__details-container {
+    display: flex;
+    margin-top: 2rem;
+  }
+
+  &__details-wrapper {
+    border-left: 1px solid var(--clr-text-secondary);
+    padding-left: 1rem;
+  }
+
+  &__details-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0 1.5rem 0;
+    font-size: 0.9rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__details-item-value {
+    color: var(--clr-text-secondary);
+  }
+
+  &__details-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__details-icon {
+    font-size: 2.5rem;
+    color: var(--clr-accent);
+    margin: 0.2rem 1rem 0.2rem 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

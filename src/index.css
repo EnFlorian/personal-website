@@ -6,12 +6,17 @@
   --font-primary: "Poppins", sans-serif;
   --navbar-height: 80px;
 
-  --clr-navbar-bg: #000000;
+  --clr-navbar-bg: #101010;
   --clr-navbar-text: #ffffff;
-  --clr-hero-bg: #000000;
+  --clr-hero-bg: #101010;
   --clr-hero-text: #ffffff;
 
-  --clr-accent: #ff9422;
+  --clr-bg-light: #161616;
+  --clr-bg-dark: #101010;
+  --clr-text-primary: #ffffff;
+  --clr-text-secondary: #828282;
+
+  --clr-accent: #009e66;
 }
 
 /* darkmode theme */

@@ -7,10 +7,10 @@ import "./MainContainer.scss";
 
 const MainContainer = () => {
   return (
-    <div className="main-container">
+    <div className="main">
       <AboutSection />
-      <ExperienceSection />
-      <PortfolioSection />
+      {/* <ExperienceSection />
+      <PortfolioSection /> */}
       <ContactSection />
     </div>
   );

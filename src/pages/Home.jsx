@@ -6,11 +6,11 @@ import "./Home.scss";
 
 const Home = () => {
   return (
-    <React.Fragment>
+    <div className="home">
       <Navbar />
       <HeroSection />
       <MainContainer />
-    </React.Fragment>
+    </div>
   );
 };
 
