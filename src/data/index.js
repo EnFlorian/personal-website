@@ -1,3 +1,5 @@
+import { FaGithub, FaLinkedin, FaCodepen, FaTwitter } from "react-icons/fa";
+
 export const navItems = [
   {
     id: "home",
@@ -23,5 +25,32 @@ export const navItems = [
     id: "contact",
     title: "Contact",
     link: "#contact",
+  },
+];
+
+export const socialsItems = [
+  {
+    id: "github",
+    title: "Github",
+    link: "",
+    icon: <FaGithub />,
+  },
+  {
+    id: "linkedin",
+    title: "LinkedIn",
+    link: "",
+    icon: <FaLinkedin />,
+  },
+  {
+    id: "twitter",
+    title: "Twitter",
+    link: "",
+    icon: <FaTwitter />,
+  },
+  {
+    id: "codepen",
+    title: "CodePen",
+    link: "",
+    icon: <FaCodepen />,
   },
 ];
