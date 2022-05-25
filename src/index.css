@@ -4,12 +4,11 @@
 
 :root {
   --font-primary: "Poppins", sans-serif;
-  --clr-text-primary: #ffffff;
-  --clr-text-secondary: #000000;
-  --clr-text-tertiary: #3b3b3b;
-  --clr-bg: #f5f6fe;
-  --clr-section-bg-dark: #191919;
-  --clr-section-bg-light: white;
+  --navbar-height: 80px;
+
+  --clr-navbar-bg: #000000;
+  --clr-navbar-text: #ffffff;
+
   --clr-accent: #ff9422;
 }
 
@@ -25,7 +24,6 @@ html[data-theme="dark"] {
   padding: 0;
   margin: 0;
 }
-
 
 img,
 picture {
@@ -52,7 +50,7 @@ picture {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background:   var(--clr-accent);
+  background: var(--clr-accent);
   border-radius: 1rem;
 }
 
@@ -60,7 +58,7 @@ picture {
 
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-    scroll-behavior:auto;
+    scroll-behavior: auto;
   }
 
   *,

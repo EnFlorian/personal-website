@@ -1,0 +1,37 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--clr-navbar-bg);
+  height: var(--navbar-height);
+  align-items: center;
+  padding: 0 2rem;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--clr-navbar-text);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+
+  &__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--clr-navbar-text);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: var(--clr-accent);
+    }
+  }
+}
