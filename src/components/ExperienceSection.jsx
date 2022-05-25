@@ -3,7 +3,7 @@ import "./ExperienceSection.scss";
 
 const ExperienceSection = () => {
   return (
-    <article className="experience">
+    <article id="experience" className="experience">
       <p className="experience__subheading">What I can do</p>
       <h2 className="experience__heading">My Experience</h2>
       <div className="experience__container">

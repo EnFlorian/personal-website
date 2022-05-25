@@ -41,24 +41,24 @@ picture {
 /* Scrollbar */
 /* Width */
 ::-webkit-scrollbar {
-  width: 0.6rem;
+  width: 0.4rem;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: hsla(0, 0%, 40%, 0.5);
+  background: var(--clr-bg-light);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--clr-section-bg-dark);
+  background: var(--clr-accent);
+  height: 2rem;
   /* border-radius: 1rem; */
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--clr-accent);
-  border-radius: 1rem;
 }
 
 /* Accesability */

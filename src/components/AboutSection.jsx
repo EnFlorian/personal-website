@@ -4,7 +4,7 @@ import aboutImage from "../assets/images/avatar-image.jpg";
 
 const AboutSection = () => {
   return (
-    <article className="about">
+    <article id="about" className="about">
       <p className="about__subheading">Get to know me</p>
       <h2 className="about__heading">About me</h2>
       <div className="about__container">
@@ -42,7 +42,7 @@ const AboutSection = () => {
               </div>
             </div>
           </section>
-          <a className="about__btn" href="#">
+          <a className="about__btn" href="#about">
             Download my CV
           </a>
         </section>

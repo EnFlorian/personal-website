@@ -4,7 +4,7 @@ import "./Typewriter.scss";
 const Typewriter = ({ content }) => {
   return (
     <div className="typewriter">
-      <span class="type">
+      <span className="type">
         <span> {content}</span>
       </span>
     </div>

@@ -6,7 +6,7 @@ import { ImLocation } from "react-icons/im";
 
 const ContactSection = () => {
   return (
-    <article className="contact">
+    <article id="contact" className="contact">
       <p className="contact__subheading">Feel free to reach out</p>
       <h2 className="contact__heading">Get in Touch</h2>
       <div className="contact__container">

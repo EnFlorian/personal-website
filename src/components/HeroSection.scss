@@ -85,6 +85,75 @@
       height: 5rem;
       background-color: var(--clr-text-primary);
       transform: rotate(-90deg);
+
+    }
+
+
+  }
+}
+
+
+@media screen and (max-width: 1280px) {
+  .hero {
+    &__name {
+      font-size: 1rem;
+      // display: none;
+    }
+
+    &__socials {
+      // display: none;
+      font-size: 1rem;
+    }
+
+    &__socials-link {
+      font-size: 1.7rem;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 910px) {
+  .hero {
+
+    &__title {
+      font-size: 3rem;
+    }
+    &__name {
+      display: none;
+    }
+
+    &__socials {
+      font-size: 1rem;
+      display: none;
+    }
+
+    &__socials-link {
+      font-size: 1.7rem;
     }
   }
 }
+
+@media screen and (max-width: 650px) {
+  .hero {
+    height: 20vh;
+
+    &__title {
+      font-size: 1.8rem;
+    }
+    &__name {
+      display: none;
+    }
+
+    &__socials {
+      font-size: 1rem;
+      display: none;
+    }
+
+    &__socials-link {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+
