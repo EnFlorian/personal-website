@@ -29,4 +29,24 @@
       margin: 1rem auto;
     }
   }
+
+  &__cards{
+    max-width: 100%;
+    display: grid;
+    gap: 1rem;
+  }
+
+
 }
+
+@media screen and (min-width: 576px) {
+
+
+  .portfolio__cards {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+}
+
+
+
