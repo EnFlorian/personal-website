@@ -20,7 +20,7 @@
     &::after {
       position: absolute;
       top: 0.3rem;
-      left: 18rem;
+      left: 18.5rem;
       content: "";
       display: block;
       width: 6rem;
@@ -32,11 +32,12 @@
 
   &__container {
     display: flex;
+    justify-content: space-between;
   }
 
   &__left-content {
     flex: 1;
-    margin-right: 4rem;
+    margin-right: 6rem;
   }
 
   &__right-content {
@@ -62,12 +63,14 @@
   }
 
   &__input {
+    font-size: 0.9rem;
     background-color: var(--clr-bg-light);
     border: none;
     margin-bottom: 1rem;
     color: var(--clr-text-secondary);
     padding: 0 0.5rem;
     height: 2.5rem;
+    transition: all 0.2s ease-in-out;
 
     &:focus {
       border-bottom: 1px solid var(--clr-accent);
@@ -78,8 +81,8 @@
   &__textarea {
     background-color: var(--clr-bg-light);
     color: var(--clr-text-secondary);
+    font-size: 0.9rem;
     padding: 0.5rem 0.5rem;
-
     border: none;
     height: 8rem;
     resize: none;
@@ -131,9 +134,9 @@
   }
 
   &__details-icon {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     color: var(--clr-accent);
-    margin: 0.2rem 1rem 0.2rem 0;
+    margin: 0.3rem 1rem 0.3rem 0;
 
     &:last-child {
       margin-bottom: 0;

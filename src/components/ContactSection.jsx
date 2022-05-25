@@ -1,6 +1,8 @@
 import React from "react";
 import "./ContactSection.scss";
-import { FaGithub } from "react-icons/fa";
+import { IoPerson } from "react-icons/io5";
+import { MdEmail } from "react-icons/md";
+import { ImLocation } from "react-icons/im";
 
 const ContactSection = () => {
   return (
@@ -26,13 +28,13 @@ const ContactSection = () => {
           <section className="contact__details-container">
             <div className="contact__details-icons">
               <div className="contact__details-icon">
-                <FaGithub />
+                <IoPerson />
               </div>
               <div className="contact__details-icon">
-                <FaGithub />
+                <MdEmail />
               </div>
               <div className="contact__details-icon">
-                <FaGithub />
+                <ImLocation />
               </div>
             </div>
             <div className="contact__details-wrapper">

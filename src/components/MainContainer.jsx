@@ -9,8 +9,8 @@ const MainContainer = () => {
   return (
     <div className="main">
       <AboutSection />
-      {/* <ExperienceSection />
-      <PortfolioSection /> */}
+      <ExperienceSection />
+      <PortfolioSection />
       <ContactSection />
     </div>
   );
