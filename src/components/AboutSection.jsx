@@ -31,7 +31,7 @@ const AboutSection = () => {
               </div>
 
               <div className="about__personals-item">
-                <p className="about__personals-item-title">Location</p>
+                <p className="about__personals-item-title">Location:</p>
                 <p className="about__personals-item-description">Linz, Austria</p>
               </div>
             </div>
