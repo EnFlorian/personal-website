@@ -1,0 +1,82 @@
+.arrow-wrap {
+  position: relative;
+  bottom: -100px;
+  -webkit-animation: arrow 0.5s 1s infinite ease-out alternate;
+  -moz-animation: arrow 0.5s 1s infinite ease-out alternate;
+  -o-animation: arrow 0.5s 1s infinite ease-out alternate;
+  animation: arrow 0.5s 1s infinite ease-out alternate;
+  width: 56px;
+}
+
+.arrow-title{
+  position:absolute;
+  top:-6rem;
+  left:-0.5rem;
+  font-size: 2rem;
+  font-weight: 400;
+
+  color: var(--clr-accent);
+  -webkit-animation: arrow 0.5s 1s infinite ease-out alternate;
+  -moz-animation: arrow 0.5s 1s infinite ease-out alternate;
+  -o-animation: arrow 0.5s 1s infinite ease-out alternate;
+  animation: arrow 0.5s 1s infinite ease-out alternate;
+  width: 56px;
+}
+
+.arrow-wrap:hover {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.arrow {
+  padding: 15px;
+  border-left: solid 5px var(--clr-accent);
+  border-bottom: solid 5px var(--clr-accent);
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.arrow-down {
+  transform: rotate(-45deg);
+  bottom: 20px;
+  margin-top: -45px;
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
+
+@-moz-keyframes arrow {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
+
+@-o-keyframes arrow {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: -90px;
+  }
+}
