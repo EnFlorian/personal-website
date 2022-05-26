@@ -51,7 +51,7 @@ const ContactSection = () => {
           <form ref={formRef} onSubmit={sendEmail} className="contact__form">
             <input className="contact__input" type="text" name="user_name" placeholder="Enter your name..." />
             <input className="contact__input" type="text" name="user_email" placeholder="Enter your email..." />
-            <input className="contact__input" type="text" name="user_subject" placeholder="Enter a subject..." />
+            {/* <input className="contact__input" type="text" name="user_subject" placeholder="Enter a subject..." /> */}
             <textarea name="message" className="contact__textarea" placeholder="Enter your message..." />
             <button type="submit" value="Send" className="contact__btn">
               Send Message
