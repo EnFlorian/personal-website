@@ -4,7 +4,7 @@ import { TOGGLE_DARK_THEME, TOGGLE_MOBILE_MENU } from "./actions";
 
 const initialState = {
   isDarkTheme: false,
-  isMobileMenuOpen: false,
+  isMobileMenuOpen: true,
 };
 
 const AppContext = React.createContext();

@@ -4,27 +4,32 @@ export const navItems = [
   {
     id: "home",
     title: "Home",
-    link: "/",
+    link: "navbar",
+    offset: 0,
   },
   {
     id: "about",
     title: "About",
-    link: "#about",
+    link: "about",
+    offset: 0,
   },
   {
     id: "experience",
     title: "Experience",
-    link: "#experience",
+    link: "experience",
+    offset: 0,
   },
   {
     id: "portfolio",
     title: "Portfolio",
-    link: "#portfolio",
+    link: "portfolio",
+    offset: 0,
   },
   {
     id: "contact",
     title: "Contact",
-    link: "#contact",
+    link: "contact",
+    offset: 0,
   },
 ];
 

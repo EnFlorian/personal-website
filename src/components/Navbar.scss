@@ -2,7 +2,7 @@
   position: sticky;
   z-index: 1;
   top: 0;
-  left:0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   background-color: var(--clr-navbar-bg);
@@ -10,8 +10,8 @@
   align-items: center;
   padding: 0 2rem;
 
-  &__mobile-menu{
-    display:none;
+  &__mobile-menu {
+    display: none;
   }
 
   &__title {
@@ -42,37 +42,58 @@
       color: var(--clr-accent);
     }
   }
+
+  &__right-content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu {
+    display: none;
+    color: white;
+    font-size: 3.5rem;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: var(--clr-accent);
+      transform: scale(1.1);
+    }
+  }
+
+  &__accent {
+    color: var(--clr-accent);
+  }
 }
 
-
 @media screen and (max-width: 910px) {
-  .navbar{
-
-    &__title{
+  .navbar {
+    &__title {
       font-size: 1.5rem;
-
     }
 
-    &__link{
+    &__link {
       font-size: 1rem;
       margin-left: 0.5rem;
     }
   }
 }
 
-
-@media screen and (max-width:  750px) {
-  .navbar{
-
-    &__mobile-menu{
-      display: block;
-    }
-    &__title{
-      font-size: 1.5rem;
-      display:none;
+@media screen and (max-width: 750px) {
+  .navbar {
+    height: 65px;
+    &__title {
+      display: none;
     }
 
-    &__links{
+    &__menu {
+      position: fixed;
+      font-size: 3rem;
+      top: 0.5rem;
+      right: 1rem;
+      display: inline;
+    }
+
+    &__links {
       display: none;
     }
   }

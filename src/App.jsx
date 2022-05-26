@@ -1,11 +1,15 @@
 import React from "react";
 import "./App.css";
+import MobileNavbar from "./components/MobileNavbar";
 import Home from "./pages/Home";
+import { useAppContext } from "./state/context";
 
 function App() {
+  const { isMobileMenuOpen } = useAppContext();
   return (
     <React.Fragment>
       <Home />
+      {isMobileMenuOpen && <MobileNavbar />}
     </React.Fragment>
   );
 }

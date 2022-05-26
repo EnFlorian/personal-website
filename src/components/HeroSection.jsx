@@ -19,7 +19,9 @@ const HeroSection = () => {
   return (
     <section id="hero" className="hero">
       <h1 className="hero__title">Florian Engertsberger</h1>
-      <Typewriter content={typewriterContent} />
+      <div className="hero__typewriter">
+        <Typewriter content={typewriterContent} />
+      </div>
       <ul className="hero__socials">{socialsLinks}</ul>
       <p className="hero__name">Florian Engertsberger</p>
     </section>
