@@ -117,15 +117,13 @@
 
     &:hover {
       transform: scale(1.03);
+      background-color: var(--clr-accent-light);
     }
   }
 }
 
 @media screen and (max-width: 820px) {
   .about {
-
-
-
     &__container {
       flex-direction: column;
     }

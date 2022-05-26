@@ -1,4 +1,4 @@
-.card{
+.card {
   background-color: var(--clr-bg-light);
   border-radius: 0.5rem;
   display: flex;
@@ -8,17 +8,17 @@
   height: 21rem;
   transition: all 0.2s ease-in-out;
 
-  &:hover{
+  &:hover {
     transform: translateY(-0.4rem);
   }
 
-  &__icon{
+  &__icon {
     font-size: 2.5rem;
     color: var(--clr-text-primary);
     margin-bottom: 0.5rem;
   }
 
-  &__content{
+  &__content {
     justify-self: center;
     align-self: center;
     display: flex;
@@ -26,31 +26,29 @@
     margin-bottom: 0.5rem;
   }
 
-  &__title{
+  &__title {
     font-size: 1.5rem;
     color: var(--clr-text-primary);
     font-weight: bold;
     margin-bottom: 1rem;
   }
 
-  &__description{
+  &__description {
     font-size: 1rem;
     color: var(--clr-text-secondary);
     margin-bottom: 0.8rem;
   }
 
-  &__tags{
+  &__tags {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 1rem;
-
-
   }
 
-  &__tag{
+  &__tag {
     font-size: 1rem;
     color: var(--clr-text-primary);
     margin-right: 0.5rem;
@@ -58,35 +56,34 @@
     padding-right: 0.5rem;
     border-right: 2px solid var(--clr-text-primary);
 
-    &:last-child{
+    &:last-child {
       border-right: none;
     }
   }
 
-  &__link{
+  &__link {
+    display: inline-block;
     font-size: 1rem;
     color: var(--clr-text-primary);
     text-decoration: none;
     transition: all 0.2s ease-in-out;
-    padding: 0.25rem 0.8rem;
-    margin-right: 0.5rem ;
+    padding: 0.5rem 0.8rem;
+    margin-right: 0.5rem;
     background-color: var(--clr-accent);
     border-radius: 0.3rem;
 
-    &:hover{
-      transform: scale(1.1);
-
+    &:hover {
+      transform: scale(1.05);
+      background-color: var(--clr-accent-light);
     }
   }
 
-
-
-  &__more-icon-link{
-    margin-top:2rem;
-    align-self:center;
+  &__more-icon-link {
+    margin-top: 2rem;
+    align-self: center;
   }
 
-  &__more-icon{
+  &__more-icon {
     align-self: center;
     font-size: 7rem;
     color: var(--clr-text-secondary);
@@ -94,11 +91,9 @@
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 
-    &:hover{
+    &:hover {
       transform: scale(1.1);
       color: var(--clr-accent);
     }
   }
 }
-
-

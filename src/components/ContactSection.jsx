@@ -24,6 +24,7 @@ const ContactSection = () => {
           draggable: true,
           progress: undefined,
         });
+        formRef.current.reset();
       },
       (error) => {
         toast.error("Something went wrong!", {
