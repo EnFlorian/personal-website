@@ -48,6 +48,7 @@ const PortfolioSection = () => {
           previewLink="https://florianengertsberger.com"
           codeLink=""
         />
+        <Card />
       </div>
     </article>
   );

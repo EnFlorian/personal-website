@@ -78,6 +78,27 @@
 
     }
   }
+
+
+
+  &__more-icon-link{
+    margin-top:2rem;
+    align-self:center;
+  }
+
+  &__more-icon{
+    align-self: center;
+    font-size: 7rem;
+    color: var(--clr-text-secondary);
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+      transform: scale(1.1);
+      color: var(--clr-accent);
+    }
+  }
 }
 
 

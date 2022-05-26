@@ -123,6 +123,9 @@
 
 @media screen and (max-width: 820px) {
   .about {
+
+
+
     &__container {
       flex-direction: column;
     }
@@ -138,9 +141,13 @@
   }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 750px) {
   .about {
     padding-top: 1rem;
+
+    &__image {
+      width: 30rem;
+    }
 
     &__personals {
       flex-direction: column;
