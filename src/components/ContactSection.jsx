@@ -1,10 +1,45 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./ContactSection.scss";
 import { IoPerson } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { ImLocation } from "react-icons/im";
+import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
 
 const ContactSection = () => {
+  const formRef = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm("service_y8tnmqn", "template_xuxbzlm", formRef.current, "0OK33tqYTW_OVGwUE").then(
+      (result) => {
+        toast.success("Message received!", {
+          theme: "dark",
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      },
+      (error) => {
+        toast.error("Something went wrong!", {
+          theme: "dark",
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      }
+    );
+  };
+
   return (
     <article id="contact" className="contact">
       <p className="contact__subheading">Feel free to reach out</p>
@@ -12,13 +47,17 @@ const ContactSection = () => {
       <div className="contact__container">
         <div className="contact__left-content">
           <p className="contact__title">Message Me</p>
-          <form className="contact__form">
-            <input className="contact__input" type="text" placeholder="Your Name" />
-            <input className="contact__input" type="email" placeholder="Your Email" />
-            <input className="contact__input" type="email" placeholder="Subject" />
-            <textarea className="contact__textarea" placeholder="Your Message"></textarea>
-            <button className="contact__btn">Send Message</button>
+
+          <form ref={formRef} onSubmit={sendEmail} className="contact__form">
+            <input className="contact__input" type="text" name="user_name" placeholder="Enter your name..." />
+            <input className="contact__input" type="text" name="user_email" placeholder="Enter your email..." />
+            <input className="contact__input" type="text" name="user_subject" placeholder="Enter a subject..." />
+            <textarea name="message" className="contact__textarea" placeholder="Enter your message..." />
+            <button type="submit" value="Send" className="contact__btn">
+              Send Message
+            </button>
           </form>
+          <ToastContainer />
         </div>
         <div className="contact__right-content">
           <p className="contact__title">Contact Information</p>

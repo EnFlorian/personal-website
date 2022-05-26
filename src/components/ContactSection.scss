@@ -100,6 +100,10 @@
     border-radius: 0.5rem;
     background-color: var(--clr-accent);
     color: var(--clr-text-primary);
+
+    &:hover {
+      transform: scale(1.03);
+    }
   }
 
   &__details-container {
@@ -144,9 +148,8 @@
   }
 }
 
-
-@media screen and (max-width:  750px) {
-  .contact{
+@media screen and (max-width: 750px) {
+  .contact {
     margin-bottom: 1rem;
 
     &__container {
@@ -156,7 +159,6 @@
     &__left-content {
       margin-right: 0;
       order: 1;
-
     }
 
     &__right-content {
@@ -171,15 +173,13 @@
 }
 
 @media screen and (max-width: 460px) {
-  .contact{
+  .contact {
     &__heading {
       &::after {
         top: 2.2rem;
         left: 0rem;
         height: 0.2rem;
-      
       }
     }
-
   }
 }

@@ -17,6 +17,10 @@
   --clr-text-secondary: #828282;
 
   --clr-accent: #009e66;
+
+  --toastify-color-dark: #232323;
+
+  --toastify-color-success: var(--clr-accent);
 }
 
 /* darkmode theme */
