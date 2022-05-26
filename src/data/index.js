@@ -4,26 +4,26 @@ export const navItems = [
   {
     id: "home",
     title: "Home",
-    link: "navbar",
-    offset: 0,
+    link: "hero",
+    offset: -60,
   },
   {
     id: "about",
     title: "About",
     link: "about",
-    offset: 0,
+    offset: -5,
   },
   {
     id: "experience",
     title: "Experience",
     link: "experience",
-    offset: 0,
+    offset: -5,
   },
   {
     id: "portfolio",
     title: "Portfolio",
     link: "portfolio",
-    offset: 0,
+    offset: -5,
   },
   {
     id: "contact",

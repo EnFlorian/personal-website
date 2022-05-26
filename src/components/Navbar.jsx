@@ -9,16 +9,16 @@ const Navbar = () => {
   const { toggleMobileMenu } = useAppContext();
 
   const navLinks = navItems.map((item) => {
-    const { id, title, link } = item;
+    const { id, title, link, offset } = item;
     return (
       <li key={id}>
         <ScrollLink
           to={link}
           spy={true}
           smooth={true}
-          offset={-5}
+          offset={offset}
           activeClass="navbar__accent"
-          className="navbar__link text-accent"
+          className="navbar__link"
         >
           {title}
         </ScrollLink>
