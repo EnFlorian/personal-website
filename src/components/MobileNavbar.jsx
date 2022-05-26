@@ -8,7 +8,7 @@ const MobileNavbar = () => {
   const { toggleMobileMenu } = useAppContext();
 
   return (
-    <nav className="mobile">
+    <nav className="mobile" onClick={() => toggleMobileMenu(false)}>
       <IoClose className="mobile__close-icon" onClick={() => toggleMobileMenu(false)} />
       <ul className="mobile__list">
         <ScrollLink
