@@ -11,14 +11,7 @@ const MobileNavbar = () => {
   const links = navItems.map(({ id, title, link, offset }) => {
     return (
       <li key={id} className="mobile__list-item">
-        <ScrollLink
-          smooth={true}
-          spy={true}
-          to={link}
-          offset={offset}
-          className="mobile__list-link"
-          onClick={() => toggleMobileMenu(false)}
-        >
+        <ScrollLink smooth={true} spy={true} to={link} offset={offset} onClick={() => toggleMobileMenu(false)}>
           {title}
         </ScrollLink>
       </li>
