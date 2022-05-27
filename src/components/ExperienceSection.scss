@@ -58,8 +58,9 @@
   &__item {
     background-color: var(--clr-bg-light);
     height: 7rem;
-    padding: 1rem 1.5rem 1.2rem 1.5rem;
+    padding: 0.5rem 1.5rem 1.2rem 1.5rem;
     border-bottom: 1px solid var(--clr-text-secondary);
+    overflow-y: scroll;
 
     &:last-child {
       border-bottom: none;
@@ -75,5 +76,17 @@
   &__item-description {
     font-size: 0.9rem;
     color: var(--clr-text-secondary);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .experience {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__left-content {
+      margin: 0rem 0rem 3rem 0rem;
+    }
   }
 }

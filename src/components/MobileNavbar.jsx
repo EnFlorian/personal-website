@@ -3,60 +3,32 @@ import "./MobileNavbar.scss";
 import { Link as ScrollLink } from "react-scroll";
 import { IoClose } from "react-icons/io5";
 import { useAppContext } from "../state/context";
+import { navItems } from "../data";
 
 const MobileNavbar = () => {
   const { toggleMobileMenu } = useAppContext();
 
+  const links = navItems.map(({ id, title, link, offset }) => {
+    return (
+      <li key={id} className="mobile__list-item">
+        <ScrollLink
+          smooth={true}
+          spy={true}
+          to={link}
+          offset={offset}
+          className="mobile__list-link"
+          onClick={() => toggleMobileMenu(false)}
+        >
+          {title}
+        </ScrollLink>
+      </li>
+    );
+  });
+
   return (
     <nav className="mobile" onClick={() => toggleMobileMenu(false)}>
       <IoClose className="mobile__close-icon" onClick={() => toggleMobileMenu(false)} />
-      <ul className="mobile__list">
-        <ScrollLink
-          smooth={true}
-          spy={true}
-          to="hero"
-          className="mobile__list-item"
-          onClick={() => toggleMobileMenu(false)}
-        >
-          Home
-        </ScrollLink>
-        <ScrollLink
-          smooth={true}
-          spy={true}
-          to="about"
-          className="mobile__list-item"
-          onClick={() => toggleMobileMenu(false)}
-        >
-          About
-        </ScrollLink>
-        <ScrollLink
-          smooth={true}
-          spy={true}
-          to="experience"
-          className="mobile__list-item"
-          onClick={() => toggleMobileMenu(false)}
-        >
-          Experience
-        </ScrollLink>
-        <ScrollLink
-          smooth={true}
-          spy={true}
-          to="portfolio"
-          className="mobile__list-item"
-          onClick={() => toggleMobileMenu(false)}
-        >
-          Portfolio
-        </ScrollLink>
-        <ScrollLink
-          smooth={true}
-          spy={true}
-          to="contact"
-          className="mobile__list-item"
-          onClick={() => toggleMobileMenu(false)}
-        >
-          Contact
-        </ScrollLink>
-      </ul>
+      <ul className="mobile__list">{links}</ul>
     </nav>
   );
 };

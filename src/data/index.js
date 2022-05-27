@@ -5,7 +5,7 @@ export const navItems = [
     id: "home",
     title: "Home",
     link: "hero",
-    offset: -60,
+    offset: -100,
   },
   {
     id: "about",
