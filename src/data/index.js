@@ -29,7 +29,7 @@ export const navItems = [
     id: "contact",
     title: "Contact",
     link: "contact",
-    offset: 0,
+    offset: -5,
   },
 ];
 
@@ -94,26 +94,23 @@ export const languageItems = [
   {
     id: "typescript",
     title: "Typescript",
-    description:
-      "TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.",
+    description: "TypeScript is a strongly typed programming language that builds on JavaScript.",
   },
   {
     id: "javascript",
     title: "Javascript",
     description:
-      "JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language. Mostly know as scripting languages for Websites.",
+      "JavaScript is a just-in-time compiled programming language. Mostly know as scripting languages for Websites.",
   },
   {
     id: "html",
     title: "HTML",
-    description:
-      "HTML, or Hypertext Markup Language, is a markup language for the web that defines the structure of web pages.",
+    description: "HTML is a markup language for the web that defines the structure of web pages.",
   },
   {
     id: "css",
     title: "CSS",
-    description:
-      "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.",
+    description: "CSS is a style sheet language used for describing the presentation of a document written in HTML.",
   },
 ];
 
@@ -121,25 +118,21 @@ export const technologieItems = [
   {
     id: "react",
     title: "React",
-    description:
-      "React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.",
+    description: "React is a JavaScript library for building component based user interfaces.",
   },
   {
     id: "redux",
     title: "Redux",
-    description:
-      "Redux is a predictable state container for JavaScript apps. It helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test.",
+    description: "Redux is a predictable state container for JavaScript apps.",
   },
   {
     id: "nodejs",
     title: "Node.js",
-    description:
-      "Node.js is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside of a web browser.",
+    description: "Node.js is JavaScript run-time environment that executes JavaScript code outside of a web browser.",
   },
   {
     id: "mongodb",
     title: "MongoDB",
-    description:
-      "MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schemas.",
+    description: "MongoDB is a NoSQL database program using JSON-like documents with schemas.",
   },
 ];
