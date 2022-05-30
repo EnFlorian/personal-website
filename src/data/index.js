@@ -60,46 +60,46 @@ export const socialsItems = [
   },
 ];
 
-export const projectsItems = [
+export const projectItems = [
   {
     id: "personal-website-template",
     title: "Personal Website Template",
     description: "A simple but modern looking website template for personal use.",
-    docuLink: "/",
+    codeLink: "/",
     websiteLink: "/",
-    categories: ["html", "sass", "javascript, react"],
+    tags: ["html", "sass", "javascript", "react.js"],
   },
   {
     id: "bugtracker",
     title: "Bugtracker",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam doloremque.",
-    docuLink: "/",
+    codeLink: "/",
     websiteLink: "/",
-    categories: ["html", "sass", "typescript, react, node.js"],
+    tags: ["html", "sass", "typescript", "react.js", "node.js"],
   },
   {
     id: "markdown-editor",
     title: "Markdown Editor",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam doloremque.",
-    docuLink: "/",
+    codeLink: "/",
     websiteLink: "/",
-    categories: ["html", "sass", "typescript, react"],
+    tags: ["html", "sass", "typescript", "react.js"],
   },
   {
     id: "countries-explorer",
     title: "Countries Explorer",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam doloremque.",
-    docuLink: "/",
+    codeLink: "/",
     websiteLink: "/",
-    categories: ["html", "sass", "typescript, react"],
+    tags: ["html", "sass", "typescript", "react.js"],
   },
   {
     id: "ip-address-checker",
     title: "IP Address Checker",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam doloremque.",
-    docuLink: "/",
+    codeLink: "/",
     websiteLink: "/",
-    categories: ["html", "sass", "javascript, react"],
+    tags: ["html", "sass", "javascript", "react.js"],
   },
 ];
 

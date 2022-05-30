@@ -1,31 +1,47 @@
 @import-normalize; /* normalizes resets */
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
 :root {
   --font-primary: "Poppins", sans-serif;
   --navbar-height: 48px;
 
-  --clr-navbar-bg: #101010;
-  --clr-navbar-text: #ffffff;
-  --clr-hero-bg: #101010;
-  --clr-hero-text: #ffffff;
-  --clr-bg-light: #161616;
-  --clr-bg-dark: #101010;
-  --clr-text-primary: #ffffff;
-  --clr-text-secondary: #828282;
+  --clr-navbar-bg: hsl(0, 0%, 6%);
+  --clr-navbar-text: hsl(0, 0%, 100%);
+  --clr-hero-bg: hsl(0, 0%, 6%);
+  --clr-hero-text: hsl(0, 0%, 100%);
+  --clr-bg-light: hsl(0, 0%, 9%);
+  --clr-bg-medium: hsl(0, 0%, 16%);
+  --clr-bg-dark: hsl(0, 0%, 6%);
+  --clr-text-primary: hsl(0, 0%, 92%);
+  /* --clr-text-secondary: #828282; */
+  --clr-text-secondary: hsl(0, 0%, 65%);
 
   --clr-accent: hsl(159, 100%, 31%);
   --clr-accent-light: hsl(159, 100%, 36%);
   --clr-accent-dark: hsl(159, 100%, 26%);
 
-  --toastify-color-dark: #232323;
+  --toastify-color-dark: hsl(0, 0%, 14%);
 
   --toastify-color-success: var(--clr-accent);
 }
 
 /* darkmode theme */
-html[data-theme="dark"] {
+html[data-theme="light"] {
+  --clr-navbar-bg: hsl(0, 0%, 100%);
+  --clr-navbar-text: hsl(0, 0%, 5%);
+  --clr-hero-bg: hsl(0, 0%, 100%);
+  --clr-hero-text: hsl(0, 0%, 5%);
+  --clr-bg-light: hsl(0, 0%, 95%);
+  --clr-bg-medium: hsl(0, 0%, 80%);
+  --clr-bg-dark: hsl(0, 0%, 100%);
+  --clr-text-primary: hsl(0, 0%, 5%);
+  --clr-text-secondary: hsl(0, 0%, 20%);
+  --clr-accent: hsl(159, 100%, 31%);
+  --clr-accent-light: hsl(159, 100%, 36%);
+  --clr-accent-dark: hsl(159, 100%, 26%);
+
+  --toastify-color-dark: hsl(0, 0%, 80%);
+  --toastify-color-success: var(--clr-accent);
 }
 
 *,
@@ -35,6 +51,10 @@ html[data-theme="dark"] {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+ul {
+  list-style: none;
 }
 
 img,

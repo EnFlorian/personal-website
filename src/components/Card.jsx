@@ -3,7 +3,7 @@ import "./Card.scss";
 import { FaFolder } from "react-icons/fa";
 import { AiOutlinePlusSquare } from "react-icons/ai";
 
-const Card = ({ title, description, tags, previewLink, codeLink }) => {
+const Card = ({ title, description, tags, websiteLink, codeLink }) => {
   return (
     <section className="card">
       {title && (
@@ -15,14 +15,14 @@ const Card = ({ title, description, tags, previewLink, codeLink }) => {
             <h1 className="card__title">{title}</h1>
             <p className="card__description">{description}</p>
             <ul className="card__tags">
-              {tags.map((tag) => (
+              {tags?.map((tag) => (
                 <li key={tag} className="card__tag">
                   {tag}
                 </li>
               ))}
             </ul>
             <div className="card__links">
-              <a className="card__link" href={previewLink}>
+              <a className="card__link" href={websiteLink}>
                 Preview
               </a>
               <a className="card__link" href={codeLink}>
