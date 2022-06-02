@@ -67,7 +67,7 @@ export const projectItems = [
     description: "A simple but modern looking website template for personal use.",
     codeLink: "/",
     websiteLink: "/",
-    tags: ["html", "sass", "javascript", "react.js"],
+    tags: ["frontend", "sass", "javascript", "react.js"],
   },
   {
     id: "bugtracker",
@@ -75,7 +75,15 @@ export const projectItems = [
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam doloremque.",
     codeLink: "/",
     websiteLink: "/",
-    tags: ["html", "sass", "typescript", "react.js", "node.js"],
+    tags: ["fullstack", "sass", "typescript", "react.js", "node.js"],
+  },
+  {
+    id: "ecommerce-website",
+    title: "Ecommie",
+    description: "An fullstack ecommerce website that implements all modern features. ",
+    codeLink: "/",
+    websiteLink: "/",
+    tags: ["fullstack", "cass", "javascript", "vue.js"],
   },
   {
     id: "markdown-editor",
@@ -83,7 +91,7 @@ export const projectItems = [
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam doloremque.",
     codeLink: "/",
     websiteLink: "/",
-    tags: ["html", "sass", "typescript", "react.js"],
+    tags: ["frontend", "sass", "typescript", "react.js"],
   },
   {
     id: "countries-explorer",
@@ -91,15 +99,7 @@ export const projectItems = [
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam doloremque.",
     codeLink: "/",
     websiteLink: "/",
-    tags: ["html", "sass", "typescript", "react.js"],
-  },
-  {
-    id: "ip-address-checker",
-    title: "IP Address Checker",
-    description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam doloremque.",
-    codeLink: "/",
-    websiteLink: "/",
-    tags: ["html", "sass", "javascript", "react.js"],
+    tags: ["frontend", "sass", "typescript", "react.js"],
   },
 ];
 
