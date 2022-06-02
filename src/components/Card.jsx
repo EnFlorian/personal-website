@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.scss";
 import { FaFolder } from "react-icons/fa";
-import { AiOutlinePlusSquare } from "react-icons/ai";
+import { BiLinkExternal } from "react-icons/bi";
 
 const Card = ({ title, description, tags, websiteLink, codeLink }) => {
   return (
@@ -42,7 +42,7 @@ const Card = ({ title, description, tags, websiteLink, codeLink }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <AiOutlinePlusSquare className="card__more-icon" />
+              <BiLinkExternal className="card__more-icon" />
             </a>
           </div>
         </>
