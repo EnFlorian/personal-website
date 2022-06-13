@@ -17,6 +17,17 @@ const HeroSection = () => {
     );
   });
 
+  const hideScrollIndicator = () => {
+    const scrollIndicator = document.querySelector(".hero__arrow");
+    if (document.documentElement.scrollTop > 20) {
+      scrollIndicator.classList.add("hero__arrow--hidden");
+    } else {
+      scrollIndicator.classList.remove("hero__arrow--hidden");
+    }
+  };
+
+  window.onscroll = hideScrollIndicator;
+
   return (
     <section id="hero" className="hero">
       <h1 className="hero__title">Florian Engertsberger</h1>
