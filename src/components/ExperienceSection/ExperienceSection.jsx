@@ -1,5 +1,5 @@
 import React from "react";
-import { languageItems, technologieItems } from "../data";
+import { languageItems, technologieItems } from "../../data";
 import "./ExperienceSection.scss";
 
 const ExperienceSection = () => {

@@ -1,8 +1,9 @@
 import React from "react";
-import AboutSection from "./AboutSection";
-import ContactSection from "./ContactSection";
-import ExperienceSection from "./ExperienceSection";
-import PortfolioSection from "./PortfolioSection";
+import AboutSection from "../AboutSection/AboutSection";
+import ContactSection from "../ContactSection/ContactSection";
+import ExperienceSection from "../ExperienceSection/ExperienceSection";
+import PortfolioSection from "../PortfolioSection/PortfolioSection";
+
 import "./MainContainer.scss";
 
 const MainContainer = () => {

@@ -2,8 +2,8 @@ import React from "react";
 import "./MobileNavbar.scss";
 import { Link as ScrollLink } from "react-scroll";
 import { IoClose } from "react-icons/io5";
-import { useAppContext } from "../state/context";
-import { navItems } from "../data";
+import { useAppContext } from "../../state/context";
+import { navItems } from "../../data";
 
 const MobileNavbar = () => {
   const { toggleMobileMenu } = useAppContext();

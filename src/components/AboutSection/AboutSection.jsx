@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutSection.scss";
-import aboutImage from "../assets/images/avatar-image.jpg";
+import aboutImage from "../../assets/images/avatar-image.jpg";
 
 const AboutSection = () => {
   return (

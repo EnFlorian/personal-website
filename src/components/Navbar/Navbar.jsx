@@ -1,9 +1,9 @@
 import React from "react";
 import "./Navbar.scss";
-import { navItems } from "../data";
+import { navItems } from "../../data";
 import { Link as ScrollLink } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
-import { useAppContext } from "../state/context";
+import { useAppContext } from "../../state/context";
 
 const Navbar = () => {
   const { toggleMobileMenu } = useAppContext();

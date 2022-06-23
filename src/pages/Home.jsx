@@ -1,8 +1,6 @@
 import React from "react";
-import Footer from "../components/Footer";
-import HeroSection from "../components/HeroSection";
-import MainContainer from "../components/MainContainer";
-import Navbar from "../components/Navbar";
+import { Footer, HeroSection, MainContainer, Navbar } from "../components";
+
 import "./Home.scss";
 
 const Home = () => {

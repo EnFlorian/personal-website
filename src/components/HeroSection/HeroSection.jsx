@@ -1,8 +1,8 @@
 import React from "react";
-import { socialsItems } from "../data";
+import { socialsItems } from "../../data";
 import "./HeroSection.scss";
-import JumpingDownArrow from "./JumpingDownArrow";
-import Typewriter from "./Typewriter";
+import JumpingDownArrow from "../JumpingDownArrow/JumpingDownArrow";
+import Typewriter from "../Typewriter/Typewriter";
 
 const HeroSection = () => {
   const typewriterContent = "I'm a Software Developer based in Linz, Austria.";

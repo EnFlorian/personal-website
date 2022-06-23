@@ -1,6 +1,6 @@
 import React from "react";
-import { projectItems } from "../data";
-import Card from "./Card";
+import { projectItems } from "../../data";
+import Card from "../Card/Card";
 import "./PortfolioSection.scss";
 
 const PortfolioSection = () => {
