@@ -7,19 +7,20 @@ import { useAppContext } from "../../state/context";
 
 const Navbar = () => {
   const { toggleMobileMenu } = useAppContext();
+  let activeLink;
+
+  const handleClick = (event) => {
+    event.preventDefault();
+    activeLink?.classList.remove("navbar__accent");
+    activeLink = event.currentTarget;
+    event.currentTarget.classList.toggle("navbar__accent");
+  };
 
   const navLinks = navItems.map((item) => {
     const { id, title, link, offset } = item;
     return (
       <li key={id}>
-        <ScrollLink
-          to={link}
-          spy={true}
-          smooth={true}
-          offset={offset}
-          activeClass="navbar__accent"
-          className="navbar__link"
-        >
+        <ScrollLink to={link} smooth={true} offset={offset} className="navbar__link" onClick={(e) => handleClick(e)}>
           {title}
         </ScrollLink>
       </li>
