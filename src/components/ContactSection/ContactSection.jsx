@@ -63,7 +63,7 @@ const ContactSection = () => {
         <div className="contact__right-content">
           <p className="contact__title">Contact Information</p>
           <p className="contact__description">
-            I'm always happy to help out and answer questions. Feel free to reach out to me!
+            I'm always happy to help out and answer questions. Don't hesitate to react out!
           </p>
           <section className="contact__details-container">
             <div className="contact__details-icons">

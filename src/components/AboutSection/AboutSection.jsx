@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutSection.scss";
 import aboutImage from "../../assets/images/avatar-image.jpg";
+import { Link as ScrollLink } from "react-scroll";
 
 const AboutSection = () => {
   return (
@@ -15,12 +16,12 @@ const AboutSection = () => {
         </section>
         <section className="about__right-content">
           <p className="about__subtitle">Who am I?</p>
-          <h3 className="about__title">I'm Florian Engertsberger, a software developer.</h3>
+          <h3 className="about__title">I'm Florian, a software developer.</h3>
           <p className="about__description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ipsum quasi sunt. Voluptate nobis fuga
-            atque ratione magni quos minima laborum itaque enim, asperiores qui exercitationem sint animi, eligendi vel!
-            Voluptate nobis fuga atque ratione magni quos minima laborum itaque enim, asperiores qui exercitationem sint
-            animi, eligendi vel!
+            I'm Florian Engertsberger, I'm a software developer and currently a computer science student in Linz. I'm
+            passionate about developing accessible interactive Frontend Applications for the Browser. When I'm not
+            coding, I usually learn about Data Visualization and Natural Language Processing and how they can increase
+            the User Experience and Usability in Web Applications.
           </p>
 
           <section className="about__personals">
@@ -42,9 +43,9 @@ const AboutSection = () => {
               </div>
             </div>
           </section>
-          <a className="about__btn" href="#about">
-            Download my CV
-          </a>
+          <ScrollLink to="contact" smooth={true} offset={-5} className="about__btn">
+            Lets Get In Touch
+          </ScrollLink>
         </section>
       </div>
     </article>
