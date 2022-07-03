@@ -21,7 +21,7 @@ const AboutSection = () => {
             I'm Florian Engertsberger, I'm a software developer and currently a computer science student in Linz. I'm
             passionate about developing accessible interactive Frontend Applications for the Browser. When I'm not
             coding, I usually learn about Data Visualization and Natural Language Processing and how they can increase
-            the User Experience and Usability in Web Applications.
+            the User Experience and Usability of Web Applications.
           </p>
 
           <section className="about__personals">
