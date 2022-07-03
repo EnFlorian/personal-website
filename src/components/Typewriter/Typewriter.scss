@@ -1,53 +1,49 @@
-.typewriter {
+.typewriter-effect {
+  display: flex;
+  justify-content: center;
   color: var(--clr-hero-text);
-  display: table;
   font-size: 2rem;
 }
 
-.type {
-  display: inline-flex;
-}
-
-.type span {
-  word-break: break-all;
-  height: 1.2em;
-  width: 0%;
+.typewriter-effect > .text {
+  max-width: 0;
+  animation: typing 3s steps(var(--characters)) infinite;
+  white-space: nowrap;
   overflow: hidden;
-  animation: t 2s linear infinite alternate;
 }
 
-.type span:before {
-  content: " ";
-  display: inline-block;
+.typewriter-effect:after {
+  content: " |";
+  animation: blink 1s infinite;
+  animation-timing-function: step-end;
 }
 
-@keyframes t {
-  90%,
+@keyframes typing {
+  75%,
   100% {
-    width: 100%;
+    max-width: calc(var(--characters) * 1ch);
   }
 }
 
-
-@media screen and (max-width: 910px) {
-  .typewriter {
-    font-size:1.5rem;
-
+@keyframes blink {
+  0%,
+  75%,
+  100% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
   }
 }
-
 
 @media screen and (max-width: 650px) {
-  .typewriter {
-    font-size:1.2rem;
-
+  .typewriter-effect {
+    font-size: 1.2rem;
   }
 }
 
 @media screen and (max-width: 470px) {
-  .typewriter {
-    font-size:1rem;
-
+  .typewriter-effect {
+    font-size: 1rem;
   }
 }
-
