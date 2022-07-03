@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Typewriter.scss";
 
 const Typewriter = ({ content }) => {
-  const typeWriter = document.getElementById("typewriter-text");
-  typeWriter.innerHTML = content;
-  typeWriter.style.setProperty("--characters", content.length);
+  useEffect(() => {
+    const typeWriter = document.getElementById("typewriter-text");
+    if (typeWriter) {
+      typeWriter.innerHTML = content;
+      typeWriter.style.setProperty("--characters", content.length);
+    }
+  }, [content]);
 
   return (
-    <div class="typewriter-effect">
-      <div class="text" id="typewriter-text"></div>
+    <div className="typewriter-effect">
+      <div className="text" id="typewriter-text"></div>
     </div>
   );
 };
