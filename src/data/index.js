@@ -46,12 +46,12 @@ export const socialsItems = [
     link: "https://www.linkedin.com/in/florian-engertsberger-44a993228/",
     icon: <FaLinkedin />,
   },
-  {
-    id: "twitter",
-    title: "Twitter",
-    link: "https://twitter.com/Flo3ng",
-    icon: <FaTwitter />,
-  },
+  // {
+  //   id: "twitter",
+  //   title: "Twitter",
+  //   link: "https://twitter.com/Flo3ng",
+  //   icon: <FaTwitter />,
+  // },
   {
     id: "codepen",
     title: "CodePen",

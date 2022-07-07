@@ -4,6 +4,7 @@ import { navItems } from "../../data";
 import { Link as ScrollLink } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { useAppContext } from "../../state/context";
+import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
 
 const Navbar = () => {
   const { toggleMobileMenu } = useAppContext();
@@ -31,7 +32,12 @@ const Navbar = () => {
     <nav className="navbar" id="navbar">
       <h1 className="navbar__title">Engertsberger</h1>
       <div className="navbar__right-content">
-        <ul className="navbar__links">{navLinks}</ul>
+        <ul className="navbar__links">
+          {navLinks}
+          <li className="navbar__link navbar__icon">
+            <ThemeSwitch />
+          </li>
+        </ul>
         <FiMenu className="navbar__menu" onClick={() => toggleMobileMenu(true)} />
       </div>
     </nav>
