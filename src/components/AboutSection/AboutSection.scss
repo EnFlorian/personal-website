@@ -113,6 +113,8 @@
     font-size: 1.1rem;
     color: var(--clr-primary);
     cursor: pointer;
+    color: var(--clr-text-neutral);
+
     transition: all 0.2s ease-in-out;
 
     &:hover {

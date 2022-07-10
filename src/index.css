@@ -9,19 +9,20 @@
   --clr-navbar-text: hsl(0, 0%, 100%);
   --clr-hero-bg: hsl(0, 0%, 6%);
   --clr-hero-text: hsl(0, 0%, 100%);
+
   --clr-bg-light: hsl(0, 0%, 9%);
   --clr-bg-medium: hsl(0, 0%, 16%);
   --clr-bg-dark: hsl(0, 0%, 6%);
+
   --clr-text-primary: hsl(0, 0%, 92%);
-  /* --clr-text-secondary: #828282; */
   --clr-text-secondary: hsl(0, 0%, 65%);
+  --clr-text-neutral: hsl(0, 0%, 100%);
 
   --clr-accent: hsl(159, 100%, 31%);
   --clr-accent-light: hsl(159, 100%, 36%);
   --clr-accent-dark: hsl(159, 100%, 26%);
 
   --toastify-color-dark: hsl(0, 0%, 14%);
-
   --toastify-color-success: var(--clr-accent);
 }
 
@@ -31,11 +32,14 @@ html[data-theme="light"] {
   --clr-navbar-text: hsl(0, 0%, 20%);
   --clr-hero-bg: hsl(0, 0%, 100%);
   --clr-hero-text: hsl(0, 0%, 20%);
+
   --clr-bg-light: hsl(0, 0%, 95%);
   --clr-bg-medium: hsl(0, 0%, 80%);
   --clr-bg-dark: hsl(0, 0%, 100%);
+
   --clr-text-primary: hsl(0, 0%, 20%);
   --clr-text-secondary: hsl(0, 0%, 30%);
+  --clr-text-neutral: hsl(0, 0%, 100%);
   --clr-accent: hsl(159, 100%, 31%);
   --clr-accent-light: hsl(159, 100%, 36%);
   --clr-accent-dark: hsl(159, 100%, 26%);
