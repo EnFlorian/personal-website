@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaCodepen, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaCodepen } from "react-icons/fa";
 
 export const navItems = [
   {
@@ -21,7 +21,7 @@ export const navItems = [
   },
   {
     id: "portfolio",
-    title: "Portfolio",
+    title: "Projects",
     link: "portfolio",
     offset: -5,
   },
@@ -46,12 +46,6 @@ export const socialsItems = [
     link: "https://www.linkedin.com/in/florian-engertsberger-44a993228/",
     icon: <FaLinkedin />,
   },
-  // {
-  //   id: "twitter",
-  //   title: "Twitter",
-  //   link: "https://twitter.com/Flo3ng",
-  //   icon: <FaTwitter />,
-  // },
   {
     id: "codepen",
     title: "CodePen",
@@ -62,14 +56,6 @@ export const socialsItems = [
 
 export const projectItems = [
   {
-    id: "kanbii",
-    title: "Kanbii - Kanban Board",
-    description: "A kanban board application for the browser that allows users to create and manage their tasks.",
-    codeLink: "/",
-    websiteLink: "/",
-    tags: ["frontend", "javascript", "react.js"],
-  },
-  {
     id: "vublog",
     title: "VuBlog - Blog",
     description: "A full-stack multi role blogging platform. That allows users to create and manage their posts.",
@@ -77,7 +63,22 @@ export const projectItems = [
     websiteLink: "/",
     tags: ["fullstack", "javascript", "react.js", "node.js"],
   },
-
+  {
+    id: "vetpet",
+    title: "VetPet - Website",
+    description: "A website for a veterinary clinic. That allows the owners to advertise their services ",
+    codeLink: "/",
+    websiteLink: "/",
+    tags: ["frontend", "typescript", "react.js"],
+  },
+  {
+    id: "Markii - Markdown Editor",
+    title: "Markii - Markdown Editor",
+    description: "A lightweight web-based markdown editor that allows the user to edit, preview and save files. ",
+    codeLink: "/",
+    websiteLink: "/",
+    tags: ["frontend", "typescript", "react.js"],
+  },
   {
     id: "personal-website",
     title: "Personal Website",
@@ -86,16 +87,6 @@ export const projectItems = [
     websiteLink: "/",
     tags: ["frontend", "javascript", "react.js"],
   },
-
-  {
-    id: "Markii - Markdown Editor",
-    title: "Markdown Editor",
-    description: "A lightweight web-based markdown editor that allows the user to edit, preview and save files. ",
-    codeLink: "/",
-    websiteLink: "/",
-    tags: ["frontend", "typescript", "react.js"],
-  },
-
   {
     id: "artvu",
     title: "Artvu - Art Gallery",
@@ -130,7 +121,7 @@ export const languageItems = [
   },
 ];
 
-export const technologieItems = [
+export const technologyItems = [
   {
     id: "react",
     title: "React",

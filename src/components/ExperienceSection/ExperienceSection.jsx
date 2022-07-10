@@ -1,5 +1,5 @@
 import React from "react";
-import { languageItems, technologieItems } from "../../data";
+import { languageItems, technologyItems } from "../../data";
 import "./ExperienceSection.scss";
 
 const ExperienceSection = () => {
@@ -12,7 +12,7 @@ const ExperienceSection = () => {
     );
   });
 
-  const technologies = technologieItems.map(({ id, title, description }) => {
+  const technologies = technologyItems.map(({ id, title, description }) => {
     return (
       <li key={id} className="experience__item">
         <p className="experience__item-title">{title}</p>
