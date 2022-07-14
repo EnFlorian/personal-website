@@ -7,7 +7,7 @@
 
 .typewriter-effect > .text {
   max-width: 0;
-  animation: typing 5s steps(var(--characters)) infinite;
+  animation: typing 10s steps(var(--characters)) infinite;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -19,7 +19,7 @@
 }
 
 @keyframes typing {
-  75%,
+  30%,
   100% {
     max-width: calc(var(--characters) * 1ch);
   }
