@@ -8,9 +8,11 @@ import { ToastContainer, toast } from "react-toastify";
 
 const ContactSection = () => {
   const formRef = useRef();
+  const [isSending, setIsSending] = React.useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsSending(true);
 
     emailjs.sendForm("service_y8tnmqn", "template_xuxbzlm", formRef.current, "0OK33tqYTW_OVGwUE").then(
       (result) => {
@@ -25,6 +27,7 @@ const ContactSection = () => {
           progress: undefined,
         });
         formRef.current.reset();
+        setIsSending(false);
       },
       (error) => {
         toast.error("Something went wrong!", {
@@ -37,6 +40,7 @@ const ContactSection = () => {
           draggable: true,
           progress: undefined,
         });
+        setIsSending(false);
       }
     );
   };
@@ -52,10 +56,9 @@ const ContactSection = () => {
           <form ref={formRef} onSubmit={sendEmail} className="contact__form">
             <input className="contact__input" type="text" name="user_name" placeholder="Enter your name..." />
             <input className="contact__input" type="text" name="user_email" placeholder="Enter your email..." />
-            {/* <input className="contact__input" type="text" name="user_subject" placeholder="Enter a subject..." /> */}
             <textarea name="message" className="contact__textarea" placeholder="Enter your message..." />
             <button type="submit" value="Send" className="contact__btn">
-              Send Message
+              {isSending ? "Sending..." : "Send Message"}
             </button>
           </form>
           <ToastContainer />
