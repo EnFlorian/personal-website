@@ -40,13 +40,10 @@
 
 
 @media screen and (min-width: 576px) {
-
-
   .portfolio__cards {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
-
 
 @media screen and (max-width: 460px) {
   .portfolio{
