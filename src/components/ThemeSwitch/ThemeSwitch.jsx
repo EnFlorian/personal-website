@@ -6,10 +6,6 @@ import { FaMoon } from "react-icons/fa";
 const ThemeSwitch = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
 
-  useEffect(() => {
-    setIsDarkTheme(document.getElementsByTagName("HTML")[0].getAttribute("data-theme" === "dark"));
-  }, []);
-
   const toggleThemeChange = () => {
     if (!isDarkTheme) {
       document.getElementsByTagName("HTML")[0].setAttribute("data-theme", "dark");
