@@ -22,10 +22,10 @@ const Card = ({ title, description, tags, websiteLink, codeLink }) => {
               ))}
             </ul>
             <div className="card__links">
-              <a className="card__link" href={websiteLink}>
+              <a className="card__link" href={websiteLink} target="_blank" rel="noopener noreferrer">
                 Preview
               </a>
-              <a className="card__link" href={codeLink}>
+              <a className="card__link" href={codeLink} target="_blank" rel="noopener noreferrer">
                 Code
               </a>
             </div>

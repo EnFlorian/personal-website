@@ -1,8 +1,8 @@
 import React from "react";
-import { socialsItems } from "../../data";
 import "./HeroSection.scss";
 import JumpingDownArrow from "../JumpingDownArrow/JumpingDownArrow";
 import Typewriter from "../Typewriter/Typewriter";
+import { socialsItems } from "../../data";
 
 const HeroSection = () => {
   const typewriterContent = "I'm a Software Developer based in Linz, Austria.";
@@ -10,7 +10,7 @@ const HeroSection = () => {
     const { id, icon, link } = item;
     return (
       <li key={id} className="hero__socials-item">
-        <a className="hero__socials-link" href={link}>
+        <a className="hero__socials-link" href={link} target="_blank" rel="noopener noreferrer">
           {icon}
         </a>
       </li>
