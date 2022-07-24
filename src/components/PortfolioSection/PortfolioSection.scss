@@ -30,14 +30,14 @@
     }
   }
 
-  &__cards{
+  &__cards {
     max-width: 100%;
     display: grid;
     gap: 1rem;
   }
-
 }
 
+// Media Queries
 
 @media screen and (min-width: 576px) {
   .portfolio__cards {
@@ -46,15 +46,13 @@
 }
 
 @media screen and (max-width: 460px) {
-  .portfolio{
+  .portfolio {
     &__heading {
       &::after {
         top: 2.2rem;
         left: 0rem;
         height: 0.2rem;
-      
       }
     }
-
   }
 }

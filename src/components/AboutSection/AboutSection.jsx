@@ -20,17 +20,15 @@ const AboutSection = () => {
           <p className="about__description">
             I'm Florian Engertsberger, I'm a software developer and currently a computer science student in Linz. I'm
             passionate about developing accessible interactive Frontend Applications for the Browser. When I'm not
-            coding, I usually learn about Data Visualization and Natural Language Processing and how they can increase
-            the User Experience and Usability of Web Applications.
+            coding, I usually learn about Data Visualization and Natural Language Processing and how they can be applied
+            to increase the User Experience and Usability of Web Applications.
           </p>
-
           <section className="about__personals">
             <div className="about__personals-left">
               <div className="about__personals-item">
                 <p className="about__personals-item-title">Name:</p>
                 <p className="about__personals-item-description">Florian Engertsberger</p>
               </div>
-
               <div className="about__personals-item">
                 <p className="about__personals-item-title">Location:</p>
                 <p className="about__personals-item-description">Linz, Austria</p>
@@ -39,7 +37,7 @@ const AboutSection = () => {
             <div className="about__personals-right">
               <div className="about__personals-item">
                 <p className="about__personals-item-title">Email:</p>
-                <p className="about__personals-item-description">contact@engertsberger.io</p>
+                <p className="about__personals-item-description">contact@enflorian.com</p>
               </div>
             </div>
           </section>

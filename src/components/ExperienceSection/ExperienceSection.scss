@@ -56,6 +56,9 @@
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--clr-bg-light);
     height: 7rem;
     padding: 0.5rem 1.5rem 0rem 1.5rem;
@@ -70,7 +73,7 @@
   &__item-title {
     font-size: 1.2rem;
     color: var(--clr-text-primary);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   &__item-description {
@@ -78,6 +81,8 @@
     color: var(--clr-text-secondary);
   }
 }
+
+// Media Queries
 
 @media screen and (max-width: 750px) {
   .experience {
@@ -87,6 +92,18 @@
 
     &__left-content {
       margin: 0rem 0rem 3rem 0rem;
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .experience {
+    &__heading {
+      &::after {
+        top: 2.2rem;
+        left: 0rem;
+        height: 0.2rem;
+      }
     }
   }
 }

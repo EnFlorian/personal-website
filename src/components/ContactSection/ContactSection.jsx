@@ -52,7 +52,6 @@ const ContactSection = () => {
       <div className="contact__container">
         <div className="contact__left-content">
           <p className="contact__title">Message Me</p>
-
           <form ref={formRef} onSubmit={sendEmail} className="contact__form">
             <input className="contact__input" type="text" name="user_name" placeholder="Enter your name..." />
             <input className="contact__input" type="text" name="user_email" placeholder="Enter your email..." />
@@ -85,15 +84,13 @@ const ContactSection = () => {
                 <p className="contact__details-item-title">Name</p>
                 <p className="contact__details-item-value">Florian Engertsberger</p>
               </div>
-
               <div className="contact__details-item">
                 <p className="contact__details-item-title">Location</p>
                 <p className="contact__details-item-value">Linz, Austria</p>
               </div>
-
               <div className="contact__details-item">
                 <p className="contact__details-item-title">Email</p>
-                <p className="contact__details-item-value">contact@engertsberger.io</p>
+                <p className="contact__details-item-value">contact@enflorian.com</p>
               </div>
             </div>
           </section>

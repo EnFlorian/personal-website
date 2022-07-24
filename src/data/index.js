@@ -124,8 +124,14 @@ export const languageItems = [
 export const technologyItems = [
   {
     id: "react",
-    title: "React",
+    title: "React.js",
     description: "React is a JavaScript library for building component based user interfaces.",
+  },
+  {
+    id: "vue",
+    title: "Vue.js",
+    description:
+      "Vue.js builds on top of standard HTML, CSS and JavaScript, and provides a component-based model for developing interfaces.",
   },
   {
     id: "redux",
@@ -136,10 +142,5 @@ export const technologyItems = [
     id: "nodejs",
     title: "Node.js",
     description: "Node.js is JavaScript run-time environment that executes JavaScript code outside of a web browser.",
-  },
-  {
-    id: "mongodb",
-    title: "MongoDB",
-    description: "MongoDB is a NoSQL database program using JSON-like documents with schemas.",
   },
 ];
