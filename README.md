@@ -1,12 +1,14 @@
 # 💻 Personal Website
 
-##### Markii is a browser-based Markdown previewer and editor that lets the user write, preview, and store markdown documents locally.
+##### My personal website. The site is fully responsive and includes a hero, about, portfolio, and contact section. The form submission is handled on the clientside which allows the site to be hosted on most static website hosting platforms.
+
 
 
 ## 📖 Features
  - Fully Responsive
  - Darkmode
  - Pure (S)CSS
+ - Clientside Form Submissions
 
 
 ## 👩‍💻 Live Demo
@@ -17,7 +19,7 @@
 
 
 
-  
+
 
 ## ⚒ Installation/Setup
 The installation requires at least **node version 10.4**
@@ -26,7 +28,6 @@ The installation requires at least **node version 10.4**
 # run in the root directory of the project
 npm install
 npm run start
-
 # run in the root directory of the project
 yarn install
 yarn run start
@@ -39,16 +40,12 @@ yarn run start
 
 | Technology              | Description                            |
 |-------------------------|----------------------------------------|
-|Typescript               |   Programming language                 |
-| React                   |   Frontend library                     |
-| SCSS                    |   CSS preprocessor                     |
-| Redux                   |   Global state management, Darkmode/Modals    |
+| React                   |   For the frontend.                    |
+| SCSS                    |   Styling                              |
+| React Context           |   Global state management, Darkmode    |
+| Email.js                |   Form Submissions                     |
 
 #### Implementation
 
-The APP is implemented with Typescript and React, it uses Redux (Toolkit) to manage its state. For the styling it uses SCSS.
-
-
-
-
+The Site used Email.js to handle the submission of the contact form, this allows the site to be statically hosted. To manage the global state a combination of React Hooks and React Context is used.
 
