@@ -11,10 +11,19 @@
  - Clientside Form Submissions
 
 
-## 👩‍💻 Live Demo
-##### Go To something.com
+## 👩‍💻 Live Website
 
-[Live Preview](enflorian.com)
+#### [enflorian.com](enflorian.com)
+
+
+## 🖼 Offline Demo
+#### Mobile Preview
+![Desktop Demo](/demo/personal-website-desktop-demo.gif)
+
+#### Mobile Preview
+![Desktop Demo](/demo/personal-website-mobile-demo.gif)
+
+
 
 
 
