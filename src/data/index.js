@@ -56,44 +56,44 @@ export const socialsItems = [
 
 export const projectItems = [
   {
+    id: "vetmed",
+    title: "VetMed - Animal Clinic",
+    description: "A simple website for a veterinary office to advertise their services and other information.",
+    codeLink: "https://github.com/EnFlorian/vetmed",
+    websiteLink: "https://vetmed-gamma.vercel.app",
+    tags: ["frontend", "typescript", "react.js"],
+  },
+  {
+    id: "florana",
+    title: "Florana - Florist Website",
+    description: "A 1-3 frontend website for a florist to advertise their products, services and other information",
+    codeLink: "https://github.com/EnFlorian/florana",
+    websiteLink: "https://florana.vercel.app/",
+    tags: ["frontend", "typescript", "angular"],
+  },
+  {
     id: "vublog",
     title: "VuBlog - Blog",
-    description: "A full-stack multi role blogging platform. That allows users to create and manage their posts.",
-    codeLink: "/",
-    websiteLink: "/",
-    tags: ["fullstack", "javascript", "react.js", "node.js"],
-  },
-  {
-    id: "vetpet",
-    title: "VetPet - Website",
-    description: "A website for a veterinary clinic. That allows the owners to advertise their services ",
-    codeLink: "/",
-    websiteLink: "/",
+    description: "A personal blogging website that lets you share your thoughts and ideas with the world.",
+    codeLink: "https://github.com/EnFlorian/vublog",
+    websiteLink: "https://vublog.vercel.app/",
     tags: ["frontend", "typescript", "react.js"],
   },
   {
-    id: "Markii - Markdown Editor",
-    title: "Markii - Markdown Editor",
-    description: "A lightweight web-based markdown editor that allows the user to edit, preview and save files. ",
-    codeLink: "/",
-    websiteLink: "/",
+    id: "kenii",
+    title: "Kenii - Landing Page",
+    description: "A simple landing page for a your personal online presence that contains all your information.",
+    codeLink: "https://github.com/EnFlorian/kenii-landing-page",
+    websiteLink: "https://kenii-landing-page.vercel.app/",
     tags: ["frontend", "typescript", "react.js"],
-  },
-  {
-    id: "personal-website",
-    title: "Personal Website",
-    description: "A simple but modern looking and easily customizable website template for personal use.",
-    codeLink: "/",
-    websiteLink: "/",
-    tags: ["frontend", "javascript", "react.js"],
   },
   {
     id: "artvu",
     title: "Artvu - Art Gallery",
-    description: "A website / e-commerce platform that allows users to manage and sell their artworks.",
-    codeLink: "/",
-    websiteLink: "/",
-    tags: ["frontend", "typescript", "react.js"],
+    description: "A frontend / e-commerce that allows you to sell your artworks and other art related products online",
+    codeLink: "https://github.com/EnFlorian/artvu-ecom",
+    websiteLink: "https://artvu-ecom.vercel.app/",
+    tags: ["frontend", "typescript", "react.js", "redux"],
   },
 ];
 
@@ -110,14 +110,14 @@ export const languageItems = [
       "JavaScript is a just-in-time compiled programming language. Mostly know as scripting languages for Websites.",
   },
   {
-    id: "html",
-    title: "HTML",
+    id: "html/css",
+    title: "HTML/CSS",
     description: "HTML is a markup language for the web that defines the structure of web pages.",
   },
   {
-    id: "css",
-    title: "CSS",
-    description: "CSS is a style sheet language used for describing the presentation of a document written in HTML.",
+    id: "java",
+    title: "Java",
+    description: "Java is a high-level, class-based, object-oriented programming language.",
   },
 ];
 
@@ -128,10 +128,9 @@ export const technologyItems = [
     description: "React is a JavaScript library for building component based user interfaces.",
   },
   {
-    id: "vue",
-    title: "Vue.js",
-    description:
-      "Vue.js builds on top of standard HTML, CSS and JavaScript, and provides a component-based model for developing interfaces.",
+    id: "angular",
+    title: "Angular",
+    description: "Angular is a TypeScript-based free and open-source web application framework. ",
   },
   {
     id: "redux",

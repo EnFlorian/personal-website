@@ -12,7 +12,7 @@ const PortfolioSection = () => {
 
   return (
     <article id="portfolio" className="portfolio">
-      <p className="portfolio__subheading">Check out my work</p>
+      <p className="portfolio__subheading">Check out some of my work</p>
       <h2 className="portfolio__heading">My Projects</h2>
       <ul className="portfolio__cards">
         {cards}

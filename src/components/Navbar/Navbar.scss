@@ -41,6 +41,10 @@
     &:hover {
       color: var(--clr-accent);
     }
+
+    &--active {
+      color: var(--clr-accent);
+    }
   }
 
   &__right-content {

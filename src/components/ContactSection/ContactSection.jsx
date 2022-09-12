@@ -5,10 +5,12 @@ import { MdEmail } from "react-icons/md";
 import { ImLocation } from "react-icons/im";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
+import { useAppContext } from "../../state/context";
 
 const ContactSection = () => {
   const formRef = useRef();
   const [isSending, setIsSending] = React.useState(false);
+  const { openNotificationModal } = useAppContext();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -16,30 +18,12 @@ const ContactSection = () => {
 
     emailjs.sendForm("service_y8tnmqn", "template_xuxbzlm", formRef.current, "0OK33tqYTW_OVGwUE").then(
       (result) => {
-        toast.success("Message received!", {
-          theme: "dark",
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-        });
+        openNotificationModal();
         formRef.current.reset();
         setIsSending(false);
       },
       (error) => {
-        toast.error("Something went wrong!", {
-          theme: "dark",
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-        });
+        toast.error("Something went wrong. Please try again later.");
         setIsSending(false);
       }
     );

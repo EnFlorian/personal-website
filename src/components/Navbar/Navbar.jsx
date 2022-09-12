@@ -8,20 +8,19 @@ import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
 
 const Navbar = () => {
   const { toggleMobileMenu } = useAppContext();
-  let activeLink;
-
-  const handleClick = (event) => {
-    event.preventDefault();
-    activeLink?.classList.remove("navbar__accent");
-    activeLink = event.currentTarget;
-    event.currentTarget.classList.toggle("navbar__accent");
-  };
 
   const navLinks = navItems.map((item) => {
     const { id, title, link, offset } = item;
     return (
       <li key={id}>
-        <ScrollLink to={link} smooth={true} offset={offset} className="navbar__link" onClick={(e) => handleClick(e)}>
+        <ScrollLink
+          to={link}
+          spy={true}
+          smooth={true}
+          offset={offset}
+          className="navbar__link"
+          activeClass="navbar__link--active"
+        >
           {title}
         </ScrollLink>
       </li>
